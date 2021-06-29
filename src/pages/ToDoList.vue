@@ -53,6 +53,7 @@ export default {
   methods: {
     newTask() {
       const task = document.getElementById("task-input");
+      // Prevent user from adding an empty task
       if (this.userInput == "") {
         task.style.backgroundColor = "rgb(255, 195, 195)";
         task.placeholder = "Write your task here";
@@ -65,6 +66,7 @@ export default {
   },
   watch: {
     userInput: function () {
+      // All inputs are valid != ""
       const task = document.getElementById("task-input");
       task.style.backgroundColor = "white";
     },

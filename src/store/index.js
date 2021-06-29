@@ -19,10 +19,4 @@ export default new Vuex.Store({
             state.todoList.splice(index, 1)
         }
     },
-    getter: {
-    },
-    actions: {
-    },
-    models: {
-    }
 });
